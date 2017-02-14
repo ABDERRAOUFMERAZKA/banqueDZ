@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Ma Banque</title>
+<link rel="stylesheet" type="text/css"
+href="../static/css/bootstrap.min.css"
+th:href="@{/css/bootstrap.min.css}" />
+
+<link rel="stylesheet" type="text/css"
+href="../static/css/MyStyle.css"
+th:href="@{/css/MyStyle.css}"/>
+
+<link rel="stylesheet" type="text/css"
+href="../static/css/monstyle2.css"
+th:href="@{/css/monstyle2.css}" />
+</head>
+<body>
+<div class="maClasse" id="raouf">
+ <header>
+       <div class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a th:href="@{/Operations}">Operations</a></li>
+              <li><a th:href="@{/Comptes}">comptes</a></li>
+              <li><a th:href="@{/Clients}">Clients</a></li>
+            </ul> 
+            <ul class="nav navbar-nav navbar-right">
+              <li><a th:href="@{/login?logout}">Se deconnecter</a></li>
+            </ul>              
+         </div>
+
+       </div>
+ </header>
+ <section layout:fragment="content"></section>
+ <footer>
+  <div class="navbar-fixed-bottom">
+       <small class="col-md-offset-9 green">@Developped By ABDERRAOUF MERAZKA</small>
+   </div>
+ </footer>
+ </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http/www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Authentification</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" 
+th:href="@{/css/bootstrap.min.css}"
+/>
+<link rel="stylesheet" type="text/css" href="../static/css/MyStyle.css" 
+th:href="@{/css/MyStyle.css}"
+/>
+
+<link rel="stylesheet" type="text/css" href="../static/css/monstyle2.css" 
+th:href="@{/css/monstyle2.css}"/>
+</head>
+<body>
+<div class="raouf">
+ <header>
+       <div class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+             <li>  <img src="images/algerieposte.jpg"/></li>
+              <li><label class ="green">Bienvenue sur la poste d'algérie</label></li>
+            </ul>  
+            
+             <ul class="nav navbar-nav navbar-right">
+              <li><a th:href="@{/login}">Revenir a la connexion</a></li>
+            </ul> 
+               
+         </div>
+         
+         
+
+       </div>
+ </header>
+
+
+<div class="col-md-4 col-md-offset-3">
+<label class ="green">مرحبا بكم في بريد الجزائر</label>
+<label>1-/veuillez taper votre identifiant et votre mot de passe pour se connecter</label>
+<label>2/-si vous avez perdu un des deux, veuillez contacter votre chef service</label>
+<label>3/-un agent de consultation ne peut pas effectuer des opérations sur les comptes</label>
+<label>3/-assurez que vous etes bien déconnecté avant de quitter votre poste</label>
+<label>4/-Pour plus d'infos, veuillez contacter le : 0033 755 993188</label>
+</div>
+
+<footer>
+  <div class="navbar-fixed-bottom">
+       <small class="col-md-offset-9 green">@Developped By ABDERRAOUF MERAZKA</small>
+   </div>
+ </footer>
+ </div>
+</body>
+
+</html>
